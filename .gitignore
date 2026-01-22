@@ -1,0 +1,268 @@
+# ==========================================
+# Casdoor .gitignore
+# ==========================================
+
+# ==========================================
+# Claude Code 相关 (Claude Code)
+# ==========================================
+.claude/
+.claude-ai/
+*.claude
+.claude*
+.claude-code/
+claude-code/
+
+# Claude 配置文件
+.claude_config
+claude_config.json
+.claude-settings
+claude-settings.json
+
+# Claude 会话历史
+.claude_history
+claude_history/
+.claude_sessions
+claude_sessions/
+
+# Claude 临时文件
+.claude_temp
+claude_temp/
+.claude_cache
+claude_cache/
+
+# ==========================================
+# Go 相关 (Go)
+# ==========================================
+# 编译二进制文件
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+casdoor
+main
+
+# Go 测试文件
+*.test
+*.out
+
+# Go 模块缓存
+go.sum
+
+# 依赖目录
+vendor/
+
+# Go workspace
+go.work
+go.work.sum
+
+# ==========================================
+# Node.js / npm 相关 (前端)
+# ==========================================
+# 依赖目录
+node_modules/
+jspm_packages/
+
+# 构建输出
+web/build/
+web/dist/
+build/
+dist/
+
+# 测试覆盖率
+coverage/
+*.lcov
+.nyc_output/
+
+# npm 日志
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# 编辑器目录和文件
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# ==========================================
+# 环境配置和密钥 (Environment & Secrets)
+# ==========================================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.pem
+*.key
+*.cert
+*.crt
+
+# 密钥文件
+secrets/
+credentials.json
+credentials/
+
+# ==========================================
+# 数据库文件 (Database)
+# ==========================================
+*.db
+*.sqlite
+*.sqlite3
+*.sql.gz
+
+# ==========================================
+# 日志文件 (Logs)
+# ==========================================
+logs/
+*.log
+npm-debug.log
+yarn-error.log
+lerna-debug.log*
+
+# ==========================================
+# 操作系统相关 (OS)
+# ==========================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Linux
+*~
+.nfs*
+
+# ==========================================
+# IDE 和编辑器 (IDEs & Editors)
+# ==========================================
+# Visual Studio Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# JetBrains IDEs (IntelliJ, GoLand, WebStorm, etc.)
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# Vim
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+Session.vim
+Sessionx.vim
+.netrwhist
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# ==========================================
+# 构建和临时文件 (Build & Temp)
+# ==========================================
+# 临时文件
+tmp/
+temp/
+*.tmp
+*.temp
+*.bak
+*.backup
+*.swp
+*.swo
+
+# 压缩文件
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+# ==========================================
+# 测试相关 (Testing)
+# ==========================================
+# 测试覆盖率
+coverage/
+*.cover
+*.coverprofile
+test-results/
+
+# ==========================================
+# Docker 相关 (Docker)
+# ==========================================
+docker-compose.override.yml
+
+# ==========================================
+# 部署相关 (Deployment)
+# ==========================================
+# 备份文件
+*.bak
+*.backup
+backup/
+backups/
+
+# ==========================================
+# 文档和笔记 (可选，根据需要调整)
+# ==========================================
+# 如果不想提交文档，取消以下注释
+# *.md
+# docs/
+
+# ==========================================
+# 其他 (Others)
+# ==========================================
+# 本地配置文件
+conf/app.conf.local
+conf/app.conf.production
+
+# 上传的文件
+uploads/
+files/
+static/uploads/
+
+# 缓存目录
+.cache/
+cache/
+
+# 系统文件
+.npm
+.eslintcache
+.stylelintcache
